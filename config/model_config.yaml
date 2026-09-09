@@ -1,0 +1,31 @@
+study:
+  name: Eastern Goldfields
+  grid_spacing_km: 10
+  positive_radius_km: 5
+  background_min_distance_km: 15
+
+validation:
+  strategy: geographic_group_kfold
+  n_splits: 5
+
+feature_selection:
+  geophysics_abs_spearman_threshold: 0.90
+  compact_feature_count: 39
+
+models:
+  random_forest:
+    n_estimators: 180
+    max_depth: 6
+    min_samples_leaf: 3
+    class_weight: balanced_subsample
+  xgboost:
+    n_estimators: 150
+    max_depth: 3
+    learning_rate: 0.04
+    subsample: 0.8
+    colsample_bytree: 0.7
+    reg_lambda: 2
+    reg_alpha: 0.2
+
+outputs:
+  ensemble: mean_rf_xgb_oof

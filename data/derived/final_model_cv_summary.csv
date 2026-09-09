@@ -1,0 +1,7 @@
+model,config,n_features,roc_auc_mean,roc_auc_std,pr_auc_mean,pr_auc_std,bal_acc_mean,f1_mean
+Random Forest,CorrPruned_175,175,0.957,0.039,0.889,0.169,0.79,0.721
+Random Forest,Full_206,206,0.949,0.06,0.882,0.2,0.809,0.76
+Random Forest,StableCompact_39,39,0.96,0.038,0.898,0.169,0.815,0.746
+XGBoost,CorrPruned_175,175,0.957,0.046,0.896,0.177,0.814,0.761
+XGBoost,Full_206,206,0.942,0.09,0.876,0.234,0.761,0.677
+XGBoost,StableCompact_39,39,0.96,0.037,0.906,0.152,0.793,0.746

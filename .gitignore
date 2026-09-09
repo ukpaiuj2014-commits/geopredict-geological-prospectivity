@@ -1,0 +1,29 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+
+# IDE
+.vscode/
+.idea/
+
+# Large/raw geoscience data
+data/raw/
+data/interim/
+*.tif
+*.tiff
+*.gpkg
+*.shp
+*.dbf
+*.shx
+*.zip
+
+# Model artifacts
+*.joblib
+*.pkl
+
+# OS
+.DS_Store
+Thumbs.db

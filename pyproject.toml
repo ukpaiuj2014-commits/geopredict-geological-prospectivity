@@ -1,0 +1,15 @@
+[build-system]
+requires = ["setuptools>=70"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "geopredict-ai"
+version = "1.0.0"
+description = "Spatially validated multi-evidence mineral prospectivity research workflow"
+requires-python = ">=3.10"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
