@@ -49,11 +49,11 @@ Two reduction stages were applied:
 1. Prune strongly correlated geophysical variables using absolute Spearman correlation > 0.90.
 2. Retain predictors showing stable Random Forest importance across the five geographic folds.
 
-The result was a 39-feature compact model.
+The result was a compact 39-feature model selected for fold stability.
 
 ## Final performance
 
-The compact Random Forest and XGBoost models each achieved approximately 0.960 mean spatial-CV ROC-AUC. Their out-of-fold ensemble reached approximately 0.962 mean ROC-AUC and 0.904 PR-AUC.
+The compact Random Forest and XGBoost models each achieved approximately 0.960 mean spatial-CV ROC-AUC. The out-of-fold RF/XGBoost ensemble reached approximately 0.962 mean ROC-AUC and 0.904 PR-AUC across the five geographic folds.
 
 These metrics are internal spatial-CV estimates, not external validation.
 
