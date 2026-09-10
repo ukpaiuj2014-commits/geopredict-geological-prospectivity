@@ -7,6 +7,7 @@
 GeoPredict AI is an end-to-end geospatial machine-learning project integrating **geochemistry, structural geology, magnetic texture and Bouguer gravity** to rank regional gold prospectivity while explicitly testing for **historical exploration bias**.
 
 > **Portfolio headline:** reduced a 206-predictor evidence stack to 39 fold-stable features and achieved ~0.96 ROC-AUC under five geographic cross-validation folds.
+
 > **Tech:** Python · Scikit-learn · XGBoost · Spatial Cross-Validation · Geospatial ML · Feature Selection · Mineral Prospectivity Mapping
 
 ### Key results
